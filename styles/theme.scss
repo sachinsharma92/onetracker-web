@@ -62,10 +62,6 @@ body {
   overflow-x: hidden;
 }
 
-p {
-  font-size: 14px;
-}
-
 .d-flex {
   display: flex;
   width: 100%;
@@ -96,4 +92,42 @@ p {
   @include mobile {
     display: block;
   }
+}
+
+// btn theme
+.button-theme {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5F65F6;
+  border: none;
+  height: 57px;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+
+// title styles
+.title1 {
+  font-size: 72px;
+  line-height: 84px;
+  font-weight: 700;
+}
+
+.title3 {
+  font-size: 32px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+.subtext {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+// container style
+.container {
+  max-width: 80%;
+  margin: 0 auto;
 }
