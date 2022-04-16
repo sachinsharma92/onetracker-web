@@ -94,6 +94,10 @@ body {
   }
 }
 
+.flickity-enabled:focus {
+  outline: none;
+}
+
 // btn theme
 .button-theme {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #5F65F6;
@@ -119,6 +123,12 @@ body {
   font-weight: 700;
 }
 
+.title4 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
 .subtext {
   font-weight: 400;
   font-size: 16px;
@@ -130,4 +140,102 @@ body {
 .container {
   max-width: 80%;
   margin: 0 auto;
+}
+
+// Layout Primary
+
+.layout-primary-style {
+
+  .header-section {
+    background: $theme-primary;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+  }
+
+  .button-section {
+
+    .button-white {
+      margin-left: 11px;
+    }
+  }
+
+  .footer-section {
+    padding: 50px 0;
+
+
+    .store-icons {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+
+      .store-img {
+        margin-right: 10px;
+      }
+    }
+
+    .social-with-copyright {
+      margin-top: 100px;
+
+      .subtext {
+        text-align: right;
+        font-weight: 500;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin-right: 30px;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin-bottom: 25px;
+        color: $textColor;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// button-outline
+.button-outline {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  color: $white;
+  min-width: 158px;
+  height: 52px;
+  font-size: 16px;
+}
+
+.button-white {
+  background: $white;
+  border-radius: 8px;
+  color: $white;
+  min-width: 158px;
+  height: 52px;
+  font-size: 16px;
+  color: $theme-primary;
 }

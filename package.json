@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "antd": "^4.19.5",
+    "flickity": "^2.3.0",
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-flickity-component": "^3.6.2"
   },
   "devDependencies": {
     "@types/node": "17.0.24",
@@ -20,7 +22,7 @@
     "@types/react-dom": "18.0.1",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
-    "typescript": "4.6.3",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "typescript": "4.6.3"
   }
 }
