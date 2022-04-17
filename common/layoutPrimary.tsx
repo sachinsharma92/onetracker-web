@@ -56,7 +56,7 @@ export default function LayoutPrimary(props: any) {
                 <Col sm={12}>
                   <div className='links'>
                     <Link href="">Feature</Link>
-                    <Link href="">Pricing</Link>
+                    <Link href="/pricing">Pricing</Link>
                   </div>
                 </Col>
                 <Col sm={12}>

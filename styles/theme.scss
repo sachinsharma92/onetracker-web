@@ -11,6 +11,7 @@
 @import './fonts';
 
 @import '../pages/home/home';
+@import '../pages/pricing/pricing';
 
 // custom css
 * {
@@ -147,9 +148,10 @@ body {
 .layout-primary-style {
 
   .header-section {
-    background: $theme-primary;
+    // background: $theme-primary;
     padding: 20px 0;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 9;
 
