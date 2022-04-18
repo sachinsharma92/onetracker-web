@@ -12,6 +12,9 @@
 
 @import '../pages/home/home';
 @import '../pages/pricing/pricing';
+@import '../pages/contact/contact';
+@import '../pages/privacy-policy/trems';
+
 
 // custom css
 * {
@@ -56,6 +59,10 @@ body {
 
 #root {
   // height: 100%;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .app-container {
@@ -143,14 +150,44 @@ body {
   margin: 0 auto;
 }
 
+// button-outline
+.button-outline {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  color: $white;
+  min-width: 158px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.button-white {
+  background: $white;
+  border-radius: 8px;
+  color: $white;
+  min-width: 158px;
+  height: 52px;
+  font-size: 16px;
+  color: $theme-primary;
+  font-weight: 500;
+}
+
 // Layout Primary
 
 .layout-primary-style {
 
+  .logo a {
+    cursor: pointer;
+  }
+
   .header-section {
     // background: $theme-primary;
-    padding: 20px 0;
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 64px;
+    position: absolute;
     width: 100%;
     top: 0;
     z-index: 9;
@@ -219,25 +256,23 @@ body {
       }
     }
   }
-}
 
-// button-outline
-.button-outline {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #FFFFFF;
-  border-radius: 8px;
-  color: $white;
-  min-width: 158px;
-  height: 52px;
-  font-size: 16px;
-}
+  &.header-white {
 
-.button-white {
-  background: $white;
-  border-radius: 8px;
-  color: $white;
-  min-width: 158px;
-  height: 52px;
-  font-size: 16px;
-  color: $theme-primary;
+
+    .header-section {
+      background: none;
+      position: absolute;
+    }
+
+    .button-outline {
+      border-color: $theme-primary;
+      color: $theme-primary;
+    }
+
+    .button-white {
+      background: $theme-primary;
+      color: $white;
+    }
+  }
 }

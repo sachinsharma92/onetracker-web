@@ -1,0 +1,48 @@
+// variables
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+
+.privacy-policy-style {
+
+  .header {
+    background: $theme-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    padding-top: 50px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 0px;
+      right: -0%;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: url('../../static/images/illustration/lines-left.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      z-index: 1;
+      background-size: contain;
+      transform: scale(1.4) rotate(-10deg);
+    }
+
+    .title4 {
+      color: $white;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  .subtext {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .content-sec {
+    padding: 50px 0;
+  }
+}

@@ -50,7 +50,7 @@
   }
 
   .content-section {
-    margin: 150px 0 80px;
+    margin: 90px 0 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,9 +195,12 @@
   max-height: 100vh;
 
   .title3 {
+    font-size: 26px;
+    margin-bottom: 0;
 
     &.lg {
       font-size: 40px;
+      margin-bottom: 20px;
     }
   }
 
@@ -205,21 +208,43 @@
     margin-top: 50px;
     padding-left: 162px;
 
-    .icon-card {
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5F65F6;
-      border-radius: 16px;
-      padding: 40px;
-    }
-
     .icon-box {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      background: $theme-primary;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 25px;
+    }
+
+    .icon-card {
+      border-radius: 16px;
+      padding: 40px;
+
+      &.blue {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5F65F6;
+
+        .icon-box {
+          background: #5F65F6;
+        }
+      }
+
+      &.green {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #148453;
+
+        .icon-box {
+          background: #67AF8F;
+        }
+      }
+
+      &.yellow {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #FFC659;
+
+        .icon-box {
+          background: #FFC659;
+        }
+      }
     }
   }
 

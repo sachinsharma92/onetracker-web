@@ -69,13 +69,16 @@ export default function BenefitsSection() {
         <div className='container'>
           <Collapse defaultActiveKey={['1']} onChange={callback}>
             <Panel header="What is Webflow and why is it the best website builder?" key="1">
-              <p>{text}</p>
+              <p className='subtext'>{text}</p>
             </Panel>
             <Panel header="What is your favorite template from BRIX Templates?" key="2">
-              <p>{text}</p>
+              <p className='subtext'>{text}</p>
             </Panel>
             <Panel header="How do you clone a Webflow Template from the Showcase?" key="3">
-              <p>{text}</p>
+              <p className='subtext'>{text}</p>
+            </Panel>
+            <Panel header="Why is BRIX Templates the best Webflow agency out there?" key="4">
+              <p className='subtext'>{text}</p>
             </Panel>
           </Collapse>
         </div>

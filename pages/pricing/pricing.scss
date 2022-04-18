@@ -196,6 +196,8 @@
     top: 3px;
   }
 
+
+  // Pricing Card style here
   .pricing-card-style {
     background: $white;
     border-radius: 24px;
@@ -358,6 +360,7 @@
 
   .title3 {
     text-align: center;
+    margin-bottom: 30px;
   }
 
   .ant-collapse {
@@ -365,188 +368,228 @@
     background: none;
   }
 
-  .ant-collapse>.ant-collapse-item {
-    background: white;
-    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
-    border-radius: 18px;
-    height: 102px;
+  .ant-collapse-header {
+    height: 72px;
+    align-items: center !important;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0 20px;
     font-weight: 500;
+    font-size: 16px;
+  }
+
+  .ant-collapse-item {
+    background: $white;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+    border-radius: 12px !important;
     margin-bottom: 20px;
-  }
-
-}
-
-// Client Think Style
-.client-think-style {
-  padding: 80px 0;
-  overflow: hidden;
-
-  .heading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .title3 {
-      text-align: center;
-    }
-  }
-
-  .title3 {
-    line-height: 45px;
-
-    span {
-      color: $theme-primary;
-    }
-  }
-
-  .description {
-    &.light-blue {
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5F65F6;
-      border-radius: 8px;
-      padding: 20px;
-    }
-  }
-
-  .text-sec {
-    margin-left: 10px;
-  }
-
-  .rating {
-    margin-top: 0;
-    position: relative;
-    top: -5px;
-  }
-
-  .carousel-slider {
-    overflow-x: hidden;
-    padding-left: 50px;
-    margin-top: 50px;
-
-
-    &::before {
-      position: absolute;
-      top: 180px;
-      left: 140px;
-      width: 579px;
-      height: 481px;
-      background: #F8F8FF;
-      border-radius: 11px;
-      content: '';
-    }
-
-    .client-card {
-      box-shadow: 5px 7px 18px 2px rgba(black, 0.07);
-      border-radius: 20px;
-      border: 1px solid #E0E7FB;
-      background-color: $white;
-      padding: 20px;
-
-      .head-sec {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .title4 {
-        font-size: 18px;
-        margin: 0;
-      }
-    }
-
-    .card-space {
-      padding: 10px;
-      width: 60%;
-
-      &:nth-child(even) {
-        margin-top: 330px;
-        left: -200px !important;
-        position: relative;
-      }
-    }
-
-    .flickity-button {
-      width: 40px !important;
-      height: 40px;
-      border-radius: 50%;
-      border: none;
-      background: $theme-primary;
-      margin-right: 10px;
-      position: absolute;
-      bottom: 14rem;
-      cursor: pointer;
-
-      &.previous {
-        left: 15rem;
-      }
-
-      &.next {
-        left: 19rem;
-      }
-
-      .flickity-button-icon {
-        filter: contrast(0) brightness(100);
-        width: 15px;
-        position: relative;
-        top: 2px;
-      }
-    }
-  }
-}
-
-// wow-works-style
-.how-works-style {
-  padding: 80px 0 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .card-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: relative;
-  }
-
-  .box-sec {
-    width: 540px;
-    height: 330px;
-    background: linear-gradient(0deg, rgba(0, 19, 37, 0.92), rgba(0, 19, 37, 0.92)), #FFFFFF;
-    border-radius: 8px;
-    position: relative;
-    margin-right: -150px;
-  }
-
-  .highlight-sec {
-    background: #EFF0FE;
-    border-radius: 16px;
-    padding: 100px;
-    padding-left: 200px;
-  }
-}
-
-// Onetracker section
-.onetracker-style {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5F65F6;
-  padding-top: 50px;
-
-  .title3 {
-    font-size: 40px;
+    overflow: hidden;
+    border: none;
+    padding: 0 15px;
   }
 
   .subtext {
-    font-size: 20px;
-    line-height: 30px;
+    max-width: 70%;
+    line-height: 24px;
   }
 
-  .img-box {
-    width: 300px;
+  .ant-collapse-content {
+    border: none;
+  }
+
+  .ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-arrow {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    background: $white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: $theme-primary;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 18px;
+    box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  }
+
+  .ant-collapse-item-active {
+    box-shadow: 0px 6px 16px rgba(74, 58, 255, 0.19);
+    border: 1px solid $theme-primary;
+
+    .ant-collapse-arrow {
+      background: $theme-primary !important;
+      color: $white !important;
+    }
+  }
+}
+
+  // Client Think Style
+  .client-think-style {
+    padding: 80px 0;
+    overflow: hidden;
+
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .title3 {
+        text-align: center;
+      }
+    }
+
+    .title3 {
+      line-height: 45px;
+
+      span {
+        color: $theme-primary;
+      }
+    }
+
+    .description {
+      &.light-blue {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5F65F6;
+        border-radius: 8px;
+        padding: 20px;
+      }
+    }
+
+    .text-sec {
+      margin-left: 10px;
+    }
+
+    .rating {
+      margin-top: 0;
+      position: relative;
+      top: -5px;
+    }
+
+    .carousel-slider {
+      overflow-x: hidden;
+      padding-left: 50px;
+      margin-top: 50px;
+
+
+      &::before {
+        position: absolute;
+        top: 180px;
+        left: 140px;
+        width: 579px;
+        height: 481px;
+        background: #F8F8FF;
+        border-radius: 11px;
+        content: '';
+      }
+
+      .client-card {
+        box-shadow: 5px 7px 18px 2px rgba(black, 0.07);
+        border-radius: 20px;
+        border: 1px solid #E0E7FB;
+        background-color: $white;
+        padding: 20px;
+
+        .head-sec {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+
+        .title4 {
+          font-size: 18px;
+          margin: 0;
+        }
+      }
+
+      .card-space {
+        padding: 10px;
+        width: 60%;
+
+        &:nth-child(even) {
+          margin-top: 330px;
+          left: -200px !important;
+          position: relative;
+        }
+      }
+
+      .flickity-button {
+        width: 40px !important;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background: $theme-primary;
+        margin-right: 10px;
+        position: absolute;
+        bottom: 14rem;
+        cursor: pointer;
+
+        &.previous {
+          left: 15rem;
+        }
+
+        &.next {
+          left: 19rem;
+        }
+
+        .flickity-button-icon {
+          filter: contrast(0) brightness(100);
+          width: 15px;
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+
+  // wow-works-style
+  .how-works-style {
+    padding: 80px 0 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+
+    .card-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .box-sec {
+      width: 540px;
+      height: 330px;
+      background: linear-gradient(0deg, rgba(0, 19, 37, 0.92), rgba(0, 19, 37, 0.92)), #FFFFFF;
+      border-radius: 8px;
+      position: relative;
+      margin-right: -150px;
+    }
+
+    .highlight-sec {
+      background: #EFF0FE;
+      border-radius: 16px;
+      padding: 100px;
+      padding-left: 200px;
+    }
   }
-}
+
+  // Onetracker section
+  .onetracker-style {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #5F65F6;
+    padding-top: 50px;
+
+    .title3 {
+      font-size: 40px;
+    }
+
+    .subtext {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .img-box {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }

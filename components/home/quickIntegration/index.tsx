@@ -56,14 +56,6 @@ export default function QuickIntegration() {
                   <h4 className='title4'><div className='number'>2</div>Easy Automation</h4>
                   <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et non mauris quam varius massa malesuada pretium </p>
                 </div>
-                <div>
-                  <h4 className='title4'><div className='number'>3</div>Quick Integration</h4>
-                  <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et non mauris quam varius massa malesuada pretium </p>
-                </div>
-                <div>
-                  <h4 className='title4'><div className='number'>4</div>Easy Automation</h4>
-                  <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et non mauris quam varius massa malesuada pretium </p>
-                </div>
               </Flickity>
             </div>
           </Col>

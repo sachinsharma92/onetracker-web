@@ -5,37 +5,45 @@ import Image from 'next/image';
 
 import heroImage from "../../../static/images/homepage/hero-image.png"
 import TrackIcon1 from "../../../static/images/icons/t-1.svg"
+import TrackIcon2 from "../../../static/images/icons/users.svg"
+import TrackIcon3 from "../../../static/images/icons/target.svg"
 
 const cardSection = [
   {
     imageUrl: TrackIcon1,
     title: 'Heading',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
+    cardStyle: 'blue'
+  },
+  {
+    imageUrl: TrackIcon2,
+    title: 'Heading',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
+    cardStyle: 'green'
+  },
+  {
+    imageUrl: TrackIcon3,
+    title: 'Heading',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
+    cardStyle: 'yellow'
   },
   {
     imageUrl: TrackIcon1,
     title: 'Heading',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
+    cardStyle: 'blue'
   },
   {
-    imageUrl: TrackIcon1,
+    imageUrl: TrackIcon2,
     title: 'Heading',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
+    cardStyle: 'green'
   },
   {
-    imageUrl: TrackIcon1,
+    imageUrl: TrackIcon3,
     title: 'Heading',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
-  },
-  {
-    imageUrl: TrackIcon1,
-    title: 'Heading',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
-  },
-  {
-    imageUrl: TrackIcon1,
-    title: 'Heading',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices pellentesque dui molestie viverra quam egestas eu. Placerat maecenas hendrerit facilisis maecenas ullamcorper sit varius sem.',
+    cardStyle: 'yellow'
   },
 ]
 
@@ -65,7 +73,7 @@ export default function TrackerSection() {
         <div className='card-section'>
           <Carousel afterChange={onChange} {...settings}>
             {cardSection.map((item) => (
-              <div className='icon-card'>
+              <div className={`icon-card ${item.cardStyle}`}>
                 <div className='icon-box'>
                   <Image src={item.imageUrl} alt="image-hero" />
                 </div>
