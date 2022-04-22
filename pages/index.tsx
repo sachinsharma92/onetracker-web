@@ -14,23 +14,23 @@ const Home: NextPage = () => {
         <meta name="robots" content="index, follow" />
         <meta
           name="description"
-          content="Combining Game technology, Data science, & Neuroscience to disrupt the way companies recruit, retain and delelop talent"
+          content="One Tracker for all <br /> Your Tracking Needs"
         />
         <meta name="google-site-verification" content="4wMoS5YqfF0DyNHr--nI4Z5iWUdka8KPYiBiCQGv5EA" />
-        <title>Unberry</title>
+        <title>Onetracker</title>
 
         {/* OG Section  */}
-        <meta property="og:url" content="https://unberry.com/static/og.png" />
+        <meta property="og:url" content="" />
         <meta property="og:type" content="website" />
         <meta property="fb:app_id" content="546555445835110" />
-        <meta property="og:image" content="https://unberry.com/static/og.png" />
+        <meta property="og:image" content="" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* Twitter OG Section  */}
         <meta
           name="twitter:image"
-          content="https://unberry.com/static/og.png"
+          content=""
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
